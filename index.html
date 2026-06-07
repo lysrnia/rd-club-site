@@ -1,0 +1,751 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ชุมนุม นศท. แม่แจ่ม | วินัย ความรับผิดชอบ และพลังของทีม</title>
+    <meta
+      name="description"
+      content="เว็บไซต์นำเสนอชุมนุม นศท. โรงเรียนแม่แจ่ม สำหรับใบงานที่ 1 มือใหม่หัดนำเสนอ"
+    />
+
+    <!-- ============================================================
+         Open Graph Tags — สำหรับแชร์บน Facebook / LINE / อื่น ๆ
+         ⚠️  เปลี่ยน YOUR_DOMAIN.com ให้ตรงกับที่คุณโฮสต์จริง
+         ⚠️  og:image ต้องเป็น URL สาธารณะ (https://) จึงจะแสดงรูป
+    ============================================================ -->
+    <meta property="og:type"        content="website" />
+    <meta property="og:locale"      content="th_TH" />
+    <meta property="og:site_name"   content="ชุมนุม นศท. โรงเรียนแม่แจ่ม" />
+    <meta property="og:title"       content="ชุมนุม นศท. แม่แจ่ม | วินัย ความรับผิดชอบ และพลังของทีม" />
+    <meta property="og:description" content="ชุมนุม นศท. โรงเรียนแม่แจ่ม — กิจกรรมที่ช่วยให้นักเรียนฝึกความอดทน วินัย การทำงานร่วมกัน และความภูมิใจในตนเอง" />
+    <meta property="og:url"         content="https://YOUR_DOMAIN.com/index.html" />
+    <meta property="og:image"       content="https://YOUR_DOMAIN.com/assets/photos/photo-06.jpg" />
+    <meta property="og:image:width"  content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt"   content="ชุมนุม นศท. โรงเรียนแม่แจ่ม" />
+
+    <!-- Twitter / X Card -->
+    <meta name="twitter:card"        content="summary_large_image" />
+    <meta name="twitter:title"       content="ชุมนุม นศท. แม่แจ่ม | วินัย ความรับผิดชอบ และพลังของทีม" />
+    <meta name="twitter:description" content="ชุมนุม นศท. โรงเรียนแม่แจ่ม — กิจกรรมที่ช่วยให้นักเรียนฝึกความอดทน วินัย การทำงานร่วมกัน และความภูมิใจในตนเอง" />
+    <meta name="twitter:image"       content="https://YOUR_DOMAIN.com/assets/photos/photo-06.jpg" />
+
+    <link rel="preload" as="image" href="assets/photos/photo-06.jpg" />
+    <style>
+      :root {
+        --ink: #12161a;
+        --muted: rgba(18, 22, 26, 0.66);
+        --paper: #f7f4ec;
+        --panel: #ffffff;
+        --night: #151b1d;
+        --green: #355f45;
+        --olive: #778557;
+        --lime: #c7e45f;
+        --clay: #c26d3f;
+        --sky: #d8e8ec;
+        --line: rgba(18, 22, 26, 0.13);
+        --shadow: 0 24px 64px rgba(18, 22, 26, 0.14);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 104px;
+      }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        background: var(--paper);
+        font-family: "Segoe UI", Tahoma, sans-serif;
+        line-height: 1.72;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      .shell {
+        width: min(1120px, calc(100% - 32px));
+        margin: 0 auto;
+      }
+
+      .site-nav {
+        position: fixed;
+        top: 14px;
+        left: 50%;
+        z-index: 20;
+        width: min(960px, calc(100% - 28px));
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+        padding: 10px 12px 10px 16px;
+        border: 1px solid rgba(255, 255, 255, 0.22);
+        border-radius: 999px;
+        color: white;
+        background: rgba(14, 18, 20, 0.66);
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.16);
+        backdrop-filter: blur(18px);
+        transform: translateX(-50%);
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        min-width: 0;
+        font-weight: 850;
+      }
+
+      .mark {
+        width: 34px;
+        height: 34px;
+        display: grid;
+        place-items: center;
+        flex: 0 0 auto;
+        border-radius: 50%;
+        color: #131a13;
+        background: var(--lime);
+        font-size: 0.78rem;
+        font-weight: 900;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+      }
+
+      .nav-links a {
+        padding: 8px 11px;
+        border-radius: 999px;
+        color: rgba(255, 255, 255, 0.82);
+        text-decoration: none;
+        font-size: 0.92rem;
+      }
+
+      .nav-links a:hover,
+      .nav-links a:focus-visible {
+        color: white;
+        background: rgba(255, 255, 255, 0.13);
+        outline: none;
+      }
+
+      .hero {
+        min-height: 88vh;
+        display: grid;
+        align-items: end;
+        color: white;
+        background:
+          linear-gradient(90deg, rgba(14, 18, 20, 0.92) 0%, rgba(14, 18, 20, 0.68) 46%, rgba(14, 18, 20, 0.2) 100%),
+          linear-gradient(180deg, rgba(14, 18, 20, 0.15), rgba(14, 18, 20, 0.8)),
+          url("assets/photos/photo-06.jpg") center / cover;
+      }
+
+      .hero-content {
+        max-width: 760px;
+        padding: 122px 0 72px;
+      }
+
+      .eyebrow,
+      .label {
+        margin: 0 0 12px;
+        color: var(--lime);
+        font-weight: 900;
+        text-transform: uppercase;
+        font-size: 0.82rem;
+        letter-spacing: 0.08em;
+      }
+
+      h1,
+      h2,
+      h3 {
+        letter-spacing: 0;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(3.2rem, 8vw, 7rem);
+        line-height: 0.95;
+        font-weight: 950;
+      }
+
+      .subtitle {
+        max-width: 650px;
+        margin: 22px 0 0;
+        color: rgba(255, 255, 255, 0.84);
+        font-size: clamp(1.08rem, 2vw, 1.32rem);
+      }
+
+      .hero-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 30px;
+      }
+
+      .hero-meta span {
+        padding: 8px 12px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 999px;
+        color: rgba(255, 255, 255, 0.86);
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      section {
+        position: relative;
+        padding: clamp(64px, 9vw, 112px) 0;
+        scroll-margin-top: 92px;
+      }
+
+      .section-head {
+        display: grid;
+        grid-template-columns: minmax(0, 0.74fr) minmax(280px, 0.48fr);
+        gap: clamp(24px, 5vw, 60px);
+        align-items: end;
+        margin-bottom: 30px;
+      }
+
+      h2 {
+        margin: 0;
+        font-size: clamp(2rem, 4.8vw, 4.5rem);
+        line-height: 1.03;
+        font-weight: 950;
+      }
+
+      .section-head p,
+      .lead {
+        margin: 0;
+        color: var(--muted);
+        font-size: 1.08rem;
+      }
+
+      .intro-copy {
+        max-width: 940px;
+        margin: 0;
+        font-size: clamp(1.22rem, 2.4vw, 2rem);
+        line-height: 1.48;
+        font-weight: 780;
+      }
+
+      .intro-copy strong {
+        color: var(--green);
+      }
+
+      .story {
+        color: white;
+        background: var(--night);
+      }
+
+      .story .label,
+      .story .section-head p {
+        color: rgba(255, 255, 255, 0.68);
+      }
+
+      .story-flow {
+        display: grid;
+        gap: 18px;
+      }
+
+      .story-block {
+        display: grid;
+        grid-template-columns: 90px minmax(0, 1fr);
+        gap: 20px;
+        padding: clamp(20px, 3vw, 30px);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 24px;
+        background: rgba(255, 255, 255, 0.055);
+      }
+
+      .story-number {
+        width: 56px;
+        height: 56px;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        color: #101418;
+        background: var(--lime);
+        font-weight: 950;
+      }
+
+      .story-block h3 {
+        margin: 0 0 10px;
+        font-size: clamp(1.24rem, 2.2vw, 1.75rem);
+      }
+
+      .story-block p {
+        margin: 0;
+        color: rgba(255, 255, 255, 0.78);
+      }
+
+      .story-block p + p {
+        margin-top: 10px;
+      }
+
+      .gallery {
+        background: #eef3ef;
+      }
+
+      .gallery-track {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .photo-card {
+        min-height: 390px;
+        display: grid;
+        grid-template-rows: minmax(230px, 1fr) auto;
+        overflow: hidden;
+        border: 1px solid rgba(18, 22, 26, 0.12);
+        border-radius: 22px;
+        background: white;
+        box-shadow: 0 18px 46px rgba(18, 22, 26, 0.08);
+      }
+
+      .photo-space {
+        min-height: 230px;
+        overflow: hidden;
+        background: var(--sky);
+      }
+
+      .photo-space img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        transition: transform 600ms ease, filter 600ms ease;
+      }
+
+      .photo-card:hover .photo-space img {
+        transform: scale(1.045);
+        filter: contrast(1.04) saturate(1.06);
+      }
+
+      .photo-card.featured-owner .photo-space {
+        outline: 3px solid var(--clay);
+        outline-offset: -12px;
+      }
+
+      .photo-card.featured-owner .photo-space img {
+        object-position: center 38%;
+      }
+
+      .photo-caption {
+        padding: 16px;
+      }
+
+      .photo-caption h3 {
+        margin: 0 0 8px;
+        font-size: 1rem;
+      }
+
+      .photo-caption p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.93rem;
+      }
+
+      .conclusion {
+        background: white;
+        padding-top: clamp(96px, 10vw, 128px);
+      }
+
+      .conclusion-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 0.78fr) minmax(260px, 0.46fr);
+        gap: 24px;
+        align-items: stretch;
+      }
+
+      .conclusion-copy {
+        padding: clamp(24px, 5vw, 52px);
+        border-radius: 28px;
+        color: white;
+        background:
+          linear-gradient(145deg, rgba(18, 22, 26, 0.9), rgba(53, 95, 69, 0.92)),
+          var(--night);
+        box-shadow: var(--shadow);
+      }
+
+      .conclusion-copy h2 {
+        margin-bottom: 22px;
+        font-size: clamp(2rem, 4vw, 3.8rem);
+      }
+
+      .conclusion-copy p {
+        margin: 0;
+        color: rgba(255, 255, 255, 0.84);
+        font-size: clamp(1.06rem, 2vw, 1.22rem);
+      }
+
+      .conclusion-copy p + p {
+        margin-top: 14px;
+      }
+
+      .summary-list {
+        display: grid;
+        gap: 12px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .summary-list li {
+        padding: 18px;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: #fbfcf8;
+      }
+
+      .site-footer {
+        padding: 30px 0 46px;
+        color: rgba(18, 22, 26, 0.58);
+        background: var(--paper);
+      }
+
+      [data-reveal] {
+        opacity: 0;
+        transform: translateY(28px);
+        transition: opacity 700ms ease, transform 700ms ease;
+      }
+
+      [data-reveal].is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      @media (max-width: 1080px) {
+        .gallery-track {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 820px) {
+        .site-nav {
+          border-radius: 24px;
+        }
+
+        .nav-links {
+          display: none;
+        }
+
+        .section-head,
+        .conclusion-layout {
+          grid-template-columns: 1fr;
+        }
+
+        .story-block {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .shell {
+          width: min(100% - 24px, 1120px);
+        }
+
+        .hero {
+          min-height: 82vh;
+          background-position: center;
+        }
+
+        .hero-content {
+          padding: 108px 0 54px;
+        }
+
+        h1 {
+          font-size: clamp(2.8rem, 17vw, 4.9rem);
+        }
+
+        .subtitle {
+          font-size: 1.03rem;
+        }
+
+        .gallery-track {
+          grid-template-columns: 1fr;
+        }
+
+        .photo-card {
+          min-height: 320px;
+        }
+
+        .photo-space {
+          min-height: 230px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="site-nav" aria-label="เมนูหลัก">
+      <div class="brand">
+        <span class="mark">นศท.</span>
+        <span>Mae Chaem Military Student Club</span>
+      </div>
+      <div class="nav-links">
+        <a href="#intro">Intro</a>
+        <a href="#story">Body</a>
+        <a href="#gallery">Photos</a>
+        <a href="#conclusion">Conclusion</a>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="shell">
+        <div class="hero-content">
+          <p class="eyebrow">กิจกรรม/โครงการ | โรงเรียนแม่แจ่ม</p>
+          <h1>ชุมนุม นศท. แม่แจ่ม</h1>
+          <p class="subtitle">
+            วินัย ความรับผิดชอบ และพลังของทีม กิจกรรมที่ช่วยให้นักเรียนฝึกความอดทน
+            การทำงานร่วมกัน และความภูมิใจในตนเอง
+          </p>
+          <div class="hero-meta" aria-label="ข้อมูลสำคัญของเว็บไซต์">
+            <span>Title</span>
+            <span>Subtitle</span>
+            <span>Intro</span>
+            <span>Body</span>
+            <span>Conclusion</span>
+            <span>5 Photos</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="intro-band" id="intro">
+        <div class="shell">
+          <p class="label" data-reveal>Intro</p>
+          <p class="intro-copy" data-reveal>
+            ชุมนุม นศท. หรือ <strong>นักศึกษาวิชาทหาร</strong> ของโรงเรียนแม่แจ่ม
+            เป็นกิจกรรมที่ทำให้นักเรียนได้เรียนรู้มากกว่าการฝึกระเบียบแถว
+            เพราะทุกครั้งที่เข้าร่วมกิจกรรม สมาชิกจะได้ฝึกความรับผิดชอบ ความอดทน
+            การตรงต่อเวลา และการทำงานร่วมกับผู้อื่นอย่างเป็นระบบ
+          </p>
+        </div>
+      </section>
+
+      <section class="story" id="story">
+        <div class="shell">
+          <div class="section-head">
+            <div>
+              <p class="label" data-reveal>Body</p>
+              <h2 data-reveal>เนื้อเรื่อง: ประสบการณ์จากชุมนุม นศท.</h2>
+            </div>
+            <p data-reveal>
+              เนื้อหานี้นำเสนอชุมนุม นศท. ในมุมของกิจกรรมที่ช่วยพัฒนาผู้เรียน ทั้งด้านวินัย
+              ความรับผิดชอบ การทำงานเป็นทีม และการนำสิ่งที่ฝึกไปใช้ในชีวิตประจำวัน
+            </p>
+          </div>
+
+          <div class="story-flow">
+            <article class="story-block" data-reveal>
+              <div class="story-number">01</div>
+              <div>
+                <h3>ชุมนุม นศท. คือพื้นที่ฝึกตัวเอง</h3>
+                <p>
+                  ชุมนุม นศท. เป็นกิจกรรมที่เปิดโอกาสให้นักเรียนได้ฝึกตนเองผ่านการปฏิบัติจริง
+                  ไม่ว่าจะเป็นการเข้าแถว การรับฟังคำสั่ง การทำกิจกรรมภาคสนาม หรือการช่วยเหลืองานส่วนรวม
+                  ทุกอย่างล้วนสอนให้สมาชิกเห็นความสำคัญของความพร้อม ความตั้งใจ และการรับผิดชอบต่อหน้าที่ของตนเอง
+                </p>
+                <p>
+                  สิ่งที่น่าสนใจคือกิจกรรมนี้ไม่ได้เน้นเฉพาะความแข็งแรงทางร่างกายเท่านั้น
+                  แต่ยังฝึกความคิด ความอดทน และการตัดสินใจในสถานการณ์จริงด้วย
+                </p>
+              </div>
+            </article>
+
+            <article class="story-block" data-reveal>
+              <div class="story-number">02</div>
+              <div>
+                <h3>บรรยากาศและการเตรียมความพร้อม</h3>
+                <p>
+                  ก่อนเริ่มกิจกรรม สมาชิกจะรวมตัวกัน ตรวจความเรียบร้อย และรับฟังคำชี้แจงจากผู้ดูแล
+                  ขั้นตอนเหล่านี้ช่วยให้ทุกคนรู้ว่าต้องทำอะไร ต้องระวังอะไร และควรปฏิบัติตนอย่างไรระหว่างกิจกรรม
+                  แม้จะเป็นช่วงเวลาสั้น ๆ แต่เป็นจุดเริ่มต้นที่ทำให้กิจกรรมดำเนินไปอย่างมีระบบ
+                </p>
+                <p>
+                  บรรยากาศในชุมนุมมีทั้งความจริงจังและความเป็นเพื่อน สมาชิกแต่ละคนต้องช่วยกันดูแลความพร้อมของทีม
+                  เพราะถ้าคนใดคนหนึ่งไม่พร้อม ภาพรวมของกลุ่มก็อาจได้รับผลกระทบไปด้วย
+                </p>
+              </div>
+            </article>
+
+            <article class="story-block" data-reveal>
+              <div class="story-number">03</div>
+              <div>
+                <h3>วินัยที่เกิดจากการฝึกซ้ำ ๆ</h3>
+                <p>
+                  การฝึกวินัยไม่ได้เกิดขึ้นจากการฟังคำสั่งเพียงครั้งเดียว แต่เกิดจากการทำซ้ำอย่างต่อเนื่อง
+                  เช่น การตรงต่อเวลา การจัดแถวให้เป็นระเบียบ การตั้งใจฟัง และการปฏิบัติพร้อมกับเพื่อน
+                  สิ่งเหล่านี้ช่วยให้สมาชิกค่อย ๆ สร้างนิสัยที่ดีโดยไม่รู้ตัว
+                </p>
+                <p>
+                  วินัยที่ได้จากชุมนุมสามารถนำไปใช้กับการเรียนและชีวิตประจำวันได้ เช่น การส่งงานตรงเวลา
+                  การรับผิดชอบสิ่งที่ได้รับมอบหมาย และการเคารพกติกาของส่วนรวม
+                </p>
+              </div>
+            </article>
+
+            <article class="story-block" data-reveal>
+              <div class="story-number">04</div>
+              <div>
+                <h3>การทำงานเป็นทีมและการช่วยเหลือกัน</h3>
+                <p>
+                  กิจกรรมหลายอย่างในชุมนุม นศท. ต้องอาศัยความร่วมมือจากหลายคน
+                  สมาชิกจึงต้องรู้จักแบ่งหน้าที่ รับฟังความคิดเห็น และช่วยเหลือเพื่อนเมื่อมีปัญหา
+                  ทำให้เห็นว่าความสำเร็จของทีมไม่ได้เกิดจากคนใดคนหนึ่ง แต่เกิดจากการร่วมมือกันของทุกคน
+                </p>
+                <p>
+                  การช่วยกันทำงานยังทำให้สมาชิกเกิดความผูกพัน เข้าใจเพื่อนมากขึ้น
+                  และรู้จักปรับตัวเมื่อต้องอยู่ร่วมกับคนที่มีนิสัยหรือความสามารถแตกต่างกัน
+                </p>
+              </div>
+            </article>
+
+            <article class="story-block" data-reveal>
+              <div class="story-number">05</div>
+              <div>
+                <h3>คุณค่าที่ได้รับจากการเข้าร่วม</h3>
+                <p>
+                  หลังจากเข้าร่วมชุมนุม นศท. สิ่งที่ได้รับไม่ใช่แค่ประสบการณ์ในกิจกรรม
+                  แต่ยังรวมถึงความมั่นใจ ความอดทน ความกล้าแสดงออก และความภูมิใจที่ได้เป็นส่วนหนึ่งของกิจกรรมในโรงเรียน
+                  ประสบการณ์เหล่านี้ช่วยให้ผู้เข้าร่วมเติบโตขึ้นทั้งด้านความคิดและการปฏิบัติตน
+                </p>
+                <p>
+                  สำหรับโรงเรียนแม่แจ่ม ชุมนุมนี้จึงเป็นกิจกรรมที่มีคุณค่า เพราะช่วยหล่อหลอมนักเรียนให้เป็นคนมีวินัย
+                  พร้อมช่วยเหลือผู้อื่น และรู้จักทำงานร่วมกับสังคมอย่างสร้างสรรค์
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery" id="gallery">
+        <div class="shell">
+          <div class="section-head">
+            <div>
+              <p class="label" data-reveal>Photos</p>
+              <h2 data-reveal>ภาพประกอบกิจกรรม</h2>
+            </div>
+            <p data-reveal>
+              คัดภาพที่จำเป็นให้เหลือ 5 รูป เพื่อให้หน้าเว็บอ่านง่ายขึ้น แต่ยังครบตามเกณฑ์งาน:
+              มีภาพกิจกรรมจริงและมีภาพเจ้าของงานอยู่ในกิจกรรม
+            </p>
+          </div>
+
+          <div class="gallery-track">
+            <figure class="photo-card" data-reveal>
+              <div class="photo-space">
+                <img src="assets/photos/photo-05.jpg" alt="สมาชิกชุมนุม นศท. รับฟังคำชี้แจงก่อนกิจกรรม" loading="lazy" />
+              </div>
+              <figcaption class="photo-caption">
+                <h3>บรรยากาศการเข้าร่วมชุมนุม</h3>
+                <p>การรับฟังคำชี้แจงก่อนเริ่มกิจกรรมช่วยให้ทุกคนเข้าใจหน้าที่ของตนเอง</p>
+              </figcaption>
+            </figure>
+
+            <figure class="photo-card" data-reveal>
+              <div class="photo-space">
+                <img src="assets/photos/photo-03.jpg" alt="นักเรียน นศท. เข้าแถวฝึกความพร้อม" loading="lazy" />
+              </div>
+              <figcaption class="photo-caption">
+                <h3>การฝึกความพร้อม</h3>
+                <p>การเข้าแถวและการปฏิบัติพร้อมกันช่วยฝึกสมาธิ วินัย และความเป็นระเบียบ</p>
+              </figcaption>
+            </figure>
+
+            <figure class="photo-card" data-reveal>
+              <div class="photo-space">
+                <img src="assets/photos/photo-01.jpg" alt="สมาชิกชุมนุม นศท. ทำงานร่วมกันบริเวณพื้นที่กิจกรรม" loading="lazy" />
+              </div>
+              <figcaption class="photo-caption">
+                <h3>การทำงานร่วมกัน</h3>
+                <p>ภาพกิจกรรมภาคสนามที่สะท้อนการช่วยเหลือกันและรับผิดชอบหน้าที่ร่วมกัน</p>
+              </figcaption>
+            </figure>
+
+            <figure class="photo-card" data-reveal>
+              <div class="photo-space">
+                <img src="assets/photos/photo-07.jpg" alt="พื้นที่การฝึกของชุมนุม นศท. ใต้ร่มไม้" loading="lazy" />
+              </div>
+              <figcaption class="photo-caption">
+                <h3>พื้นที่การฝึก</h3>
+                <p>สถานที่ฝึกเป็นส่วนหนึ่งของประสบการณ์ที่ทำให้กิจกรรมดูจริงจังและน่าจดจำ</p>
+              </figcaption>
+            </figure>
+
+            <figure class="photo-card featured-owner" data-reveal>
+              <div class="photo-space">
+                <img src="assets/photos/photo-11.jpg" alt="เจ้าของงานเข้าร่วมกิจกรรมชุมนุม นศท." loading="lazy" />
+              </div>
+              <figcaption class="photo-caption">
+                <h3>เจ้าของงานในกิจกรรม</h3>
+                <p>รูปนี้เป็นหลักฐานว่าผู้จัดทำอยู่ในภาพประกอบตามเกณฑ์ใบงาน</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="conclusion" id="conclusion">
+        <div class="shell conclusion-layout">
+          <div class="conclusion-copy" data-reveal>
+            <p class="label">Conclusion</p>
+            <h2>ส่วนสรุปเนื้อหา (Conclusion)</h2>
+            <p>
+              ชุมนุม นศท. โรงเรียนแม่แจ่มเป็นกิจกรรมที่ช่วยพัฒนานักเรียนอย่างรอบด้าน
+              ทั้งในเรื่องวินัย ความรับผิดชอบ ความอดทน และการทำงานเป็นทีม
+              แม้บางกิจกรรมจะต้องใช้แรงกายและความตั้งใจสูง แต่ประสบการณ์ที่ได้รับกลับมีคุณค่ามาก
+              เพราะช่วยให้สมาชิกเข้าใจการอยู่ร่วมกับผู้อื่นและรู้จักหน้าที่ของตนเองมากขึ้น
+            </p>
+            <p>
+              โดยสรุป ชุมนุมนี้ไม่ใช่เพียงกิจกรรมเสริมในโรงเรียน แต่เป็นพื้นที่ฝึกชีวิตที่ทำให้นักเรียนได้เติบโต
+              ได้เรียนรู้การช่วยเหลือกัน และได้สร้างความภูมิใจให้กับตนเอง เพื่อน และโรงเรียนแม่แจ่ม
+            </p>
+          </div>
+
+          <ul class="summary-list" data-reveal>
+            <li>ฝึกวินัยและความตรงต่อเวลา</li>
+            <li>สร้างความรับผิดชอบต่อหน้าที่</li>
+            <li>เรียนรู้การทำงานร่วมกับผู้อื่น</li>
+            <li>ฝึกความอดทนและความกล้าแสดงออก</li>
+            <li>สร้างความภูมิใจในตนเองและโรงเรียนแม่แจ่ม</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell">
+        ใบงานที่ 1 มือใหม่หัดนำเสนอ | หัวข้อกิจกรรม/โครงการ | ชุมนุม นศท. โรงเรียนแม่แจ่ม
+      </div>
+    </footer>
+
+    <script>
+      const revealItems = document.querySelectorAll("[data-reveal]");
+      const revealObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              revealObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.14 }
+      );
+
+      revealItems.forEach((item) => revealObserver.observe(item));
+    </script>
+  </body>
+</html>
